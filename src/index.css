@@ -155,6 +155,9 @@ img {
   box-shadow: var(--shadow-2);
   margin-right: 0.5rem;
   color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
