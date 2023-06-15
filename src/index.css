@@ -111,9 +111,6 @@ img {
   justify-content: center;
   row-gap: 2rem;
   gap: 1rem;
-  background: var(--gray-50);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-2);
   padding: 2rem;
 }
 .person {
