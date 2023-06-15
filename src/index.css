@@ -131,7 +131,7 @@ img {
 .person-img {
   object-fit: cover;
   height: 300px;
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .person-info {
   padding: 1rem 2rem;
@@ -179,5 +179,8 @@ img {
   .person {
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+  .person-img {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
   }
 }
