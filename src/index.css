@@ -118,7 +118,7 @@ img {
 }
 .person {
   background: var(--gray-100);
-  display: flex;
+  display: grid;
   gap: 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-1);
@@ -128,17 +128,13 @@ img {
   box-shadow: var(--shadow-3);
   transform: scale(var(--scale));
 }
-.img-container {
-  width: 200px;
-  height: 180px;
-}
 .person-img {
-  height: 100%;
   object-fit: cover;
+  height: 300px;
   border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 .person-info {
-  padding: 1.5rem 1rem 0 0;
+  padding: 1rem 2rem;
 }
 .person-description {
   margin: 0;
@@ -162,6 +158,7 @@ img {
 }
 
 .btn {
+  width: 100%;
   background-color: transparent;
   border: 1px solid var(--primary-500);
   border-radius: var(--border-radius);
@@ -177,4 +174,10 @@ img {
 .btn:hover {
   background: var(--primary-500);
   color: #ffffff;
+}
+@media (min-width: 600px) {
+  .person {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
